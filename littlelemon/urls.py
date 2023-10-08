@@ -25,4 +25,6 @@ urlpatterns = [
     path('',include('reservation.urls')),
     path('api-auth/',include('rest_framework.urls',namespace='rest_framework')),
     path('booking/',include(router.urls)),
+    path('auth/',include('djoser.urls')),
+    path('auth/',include('djoser.urls.authtoken')),
 ]

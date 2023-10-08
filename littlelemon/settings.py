@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'reservation',
     'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
 ]
+DJOSER = {'USER_ID_FIELD':'username'}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
